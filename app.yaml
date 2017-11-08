@@ -1,0 +1,11 @@
+application: emogify
+version: 1
+runtime: php55
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: /createRules/?
+  script: /createRules/createRules.php
+- url: .*
+  script: main.php

@@ -1,4 +1,6 @@
-application: emojify-185414
+application: azoio-apps
+module: emogify
+
 version: 1
 runtime: php55
 api_version: 1
@@ -9,7 +11,5 @@ skip_files:
 - ^(.*/)?-.*$
 
 handlers:
-#- url: /createRules/?
-#  script: /createRules/createRules.php
 - url: .*
   script: main.php
